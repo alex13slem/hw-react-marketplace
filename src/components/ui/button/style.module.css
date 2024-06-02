@@ -1,0 +1,19 @@
+.root {
+  position: relative;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  background-color: #a73afd;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 2.5em;
+  padding-inline: 1.5rem;
+
+  & a {
+    position: absolute;
+    inset: 0;
+  }
+}

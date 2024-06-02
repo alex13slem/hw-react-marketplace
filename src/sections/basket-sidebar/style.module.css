@@ -1,0 +1,47 @@
+.root {
+  background-color: var(--c-card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.total-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  }
+
+  & .total {
+    opacity: 0.7;
+  }
+
+  & .discount {
+    font-weight: 600;
+  }
+
+  & .discounted-price {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
+
+.btns {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & button.clear {
+    margin-bottom: 0.5rem;
+    text-decoration: dotted underline;
+    text-decoration-color: color-mix(
+      in srgb,
+      currentColor 50%,
+      transparent 50%
+    );
+  }
+}

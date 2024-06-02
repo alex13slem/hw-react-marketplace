@@ -1,0 +1,17 @@
+.root {
+  position: relative;
+
+  &::after {
+    content: attr(data-quantity);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+    width: 1em;
+    height: 1em;
+    padding: 0.35em;
+    border-radius: 50%;
+    background-color: #a73afd;
+    color: whitesmoke;
+  }
+}

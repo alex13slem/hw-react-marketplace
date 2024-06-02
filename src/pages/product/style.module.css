@@ -1,0 +1,24 @@
+.root {
+  padding-block: 1rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.description {
+  margin-block: 1rem;
+  max-width: 400px;
+}
+
+.btn {
+  position: relative;
+  z-index: 3;
+  margin-top: 0.75rem;
+}

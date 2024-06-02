@@ -1,0 +1,79 @@
+.root {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--c-card-bg);
+
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  & > a {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.top-wrap {
+  /* background-color: color-mix(in srgb, #ed3cca 50%, transparent 50%); */
+  border-radius: 0.5rem;
+}
+
+.middle-wrap {
+  flex: 1;
+}
+
+.price {
+  line-height: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+
+  & span {
+    font-size: 1.125rem;
+    color: #ed3cca;
+    font-weight: bold;
+  }
+
+  & s {
+    font-size: 0.875rem;
+    color: color-mix(in srgb, currentColor 80%, transparent 20%);
+  }
+}
+
+.title {
+  margin-block: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category {
+  color: color-mix(in srgb, currentColor 50%, transparent 50%);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  font-size: 0.875rem;
+
+  & > svg {
+    color: yellow;
+  }
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.75rem;
+  width: 100%;
+}

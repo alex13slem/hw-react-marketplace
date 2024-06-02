@@ -1,0 +1,11 @@
+:root {
+  --c-card-bg: #1f1f1f;
+  --c-bg: #242424;
+  --c-text: #eee;
+
+  @media (prefers-color-scheme: light) {
+    --c-card-bg: whitesmoke;
+    --c-bg: #eee;
+    --c-text: #242424;
+  }
+}

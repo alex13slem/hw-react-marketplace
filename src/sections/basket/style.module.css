@@ -1,0 +1,16 @@
+.root {
+  background-color: var(--c-card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.product-count {
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

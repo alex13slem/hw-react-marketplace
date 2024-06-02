@@ -1,0 +1,17 @@
+.root {
+  padding-block: 1rem;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.main {
+  flex: 1 1 0;
+}
+
+.sidebar {
+  top: 1rem;
+  position: sticky;
+  flex: 360px 0 0;
+  align-self: start;
+}

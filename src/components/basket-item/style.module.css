@@ -1,0 +1,62 @@
+.root {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  & img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    width: 6rem;
+  }
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .btn {
+    font-size: 1.5rem;
+    line-height: 1;
+    background-color: var(--c-bg);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  & .value {
+    font-weight: 600;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+
+  & .price {
+    line-height: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+
+    & span {
+      font-size: 1.125rem;
+      color: #ed3cca;
+      font-weight: bold;
+    }
+
+    & s {
+      font-size: 0.875rem;
+      color: color-mix(in srgb, currentColor 80%, transparent 20%);
+    }
+  }
+}
