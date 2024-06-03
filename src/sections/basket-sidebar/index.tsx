@@ -1,9 +1,9 @@
 import { ComponentProps, FC, HTMLAttributes } from 'react';
 import css from './style.module.css';
-import Button from '../../components/ui/button';
 import { useBasketStore } from '../../store/basket';
 import { formatPrice } from '../../utils';
 import cn from 'classnames';
+import SubmitBasketButton from '../../components/submit-basket-button';
 
 interface Props extends ComponentProps<FC>, HTMLAttributes<HTMLDivElement> {}
 
@@ -35,7 +35,7 @@ const BasketSidebar: FC<Props> = ({ className, ...props }) => {
         <button className={css['clear']} onClick={() => clearBasket()}>
           Очистить корзину
         </button>
-        <Button className={css['checkout']}>Оформить заказ</Button>
+        <SubmitBasketButton />
       </div>
     </aside>
   );
